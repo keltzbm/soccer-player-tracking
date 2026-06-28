@@ -1,3 +1,10 @@
+# Ornstein-Uhlenbeck (OU) process
+# dX_t = theta * (mu - X_t) * dt + sigma * dW_t
+# X(t + dt) = (1 - theta * dt) * X(t) + theta * mu * dt + sigma * sqrt(dt) * N(0, 1)
+
+
+# (1 - theta * dt) * mu + theta * mu * dt + sigma * sqrt(dt) * N(0, 1)
+# mu + sigma * sqrt(dt) * N(0, 1)
 import numpy as np
 
 n_players = 11
